@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "51bb8930-1d2a-478a-96ee-b95cae7502c4",
+		"name": "final-exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4999286"
+	},
+	"item": [
+		{
+			"name": "employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Employee 1\",\r\n    \"lastName\":\"Lim\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees/2",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId skill",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/skills/2",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"skills",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getall skills",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/skills",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 2,\r\n        \"firstName\": \"22\",\r\n        \"lastName\": \"regular FF\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update skill",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 2,\r\n        \"firstName\": \"22\",\r\n        \"lastName\": \"regular FF\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees/2",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId skill",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/skills/1",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"skills",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create employee skill",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Class S\",\r\n    \"duration\":1000,\r\n    \"lastUsed\":\"2020-11-23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees/1/skills",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"1",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pagination sorting",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/employees/page/0/size/2?field=id&order=desc",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"page",
+						"0",
+						"size",
+						"2"
+					],
+					"query": [
+						{
+							"key": "field",
+							"value": "id"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pagination sorting skills",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"rey\",\r\n    \"bookName\":\"Knights\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8888}}/api/v1/skills/page/0/size/2?field=id&order=desc",
+					"host": [
+						"{{8888}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"skills",
+						"page",
+						"0",
+						"size",
+						"2"
+					],
+					"query": [
+						{
+							"key": "field",
+							"value": "id"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"jwt\", jsonData.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "login-app",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "user1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "xsw2@WSX:",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://5.181.217.203:8080/auth/realms/SpringBootKeycloak/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"5",
+						"181",
+						"217",
+						"203"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"SpringBootKeycloak",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{jwt}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
